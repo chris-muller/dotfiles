@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Check is running in git directory
+if ! [[ "$(git rev-parse --is-inside-work-tree  2> /dev/null)" = "true" ]]; then
+    echo "This is not a git directory."
+    exit 1
+fi
+
+# fetch all remote data
+git fetch --all
+
+# get branch to rebase againt
+DEFAUL_BRANCH="main"
+REBASE_AGAINST_BRANCH="${1:-$DEFAUL_BRANCH}"
+
+git rebase origin/$REBASE_AGAINST_BRANCH

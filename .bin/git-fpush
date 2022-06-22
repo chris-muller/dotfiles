@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Check is running in git directory
+if ! [[ "$(git rev-parse --is-inside-work-tree  2> /dev/null)" = "true" ]]; then
+    echo "This is not a git directory."
+    exit 1
+fi
+
+# Check isn't running in master branch
+current_banch=$(git branch --show-current)
+
+if [ $current_banch = 'master' -o $current_banch == 'main' ]; then
+    echo "Cannot force-push $current_banch branch."
+    exit 1
+fi
+
+# Force push current branch
+echo "Force-pushing $current_banch"
+
+git push -f origin $current_banch
