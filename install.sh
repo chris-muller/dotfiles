@@ -9,3 +9,6 @@ cp .zshrc_append $HOME
 chmod 755 .bin/*
 
 cat $HOME/.zshrc_append >> $HOME/.zshrc
+
+# Install extensions
+code --install-extension EthanSK.restore-terminals
