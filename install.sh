@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 # Copy VS Code settings
-cp -r $HOME/.vscode $CODESPACE_VSCODE_FOLDER
+cp -r $HOME/.vscode ./
 cp -r .bin $HOME
 cp .zshrc_append $HOME
 
