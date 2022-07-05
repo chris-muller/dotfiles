@@ -6,14 +6,6 @@
     {
       "splitTerminals": [
         {
-          "name": "skutopia",
-          "commands": []
-        }
-      ]
-    },
-    {
-      "splitTerminals": [
-        {
           "name": "web",
           "commands": ["cd ./web"]
         },
@@ -72,6 +64,14 @@
         {
           "name": "seeder",
           "commands": ["cd ./seeder"]
+        }
+      ]
+    },
+    {
+      "splitTerminals": [
+        {
+          "name": "skutopia",
+          "commands": []
         }
       ]
     }
