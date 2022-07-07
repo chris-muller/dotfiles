@@ -44,7 +44,7 @@ configure_bin() {
 	# Copy scripts to home dir
 	rsync --archive $DOTFILES_PATH/bin/ $HOME/bin
 
-	export PATH="$HOME/bin:$PATH"
+	echo 'export PATH="$HOME/bin:$PATH"' >> $HOME/.zshrc
 }
 
 configure_shell
