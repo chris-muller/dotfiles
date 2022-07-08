@@ -103,3 +103,6 @@ DISABLE_AUTO_UPDATE=true
 DISABLE_UPDATE_PROMPT=true
 
 ZSH_THEME="cloud"
+
+# fix tmux window titles not working
+export DISABLE_AUTO_TITLE=true
