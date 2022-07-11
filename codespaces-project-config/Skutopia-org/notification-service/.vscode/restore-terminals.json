@@ -1,0 +1,39 @@
+{
+	"artificialDelayMilliseconds": 300,
+	"keepExistingTerminalsOpen": false,
+	"runOnStartup": true,
+	"terminals": [
+		{
+			"splitTerminals": [
+				{
+					"name": "server",
+					"commands": ["cd ./packages/server"]
+				},
+				{
+					"name": "tests",
+					"commands": ["cd ./packages/server", "yarn test:watch"]
+				}
+			]
+		},
+		{
+			"splitTerminals": [
+				{
+					"name": "common",
+					"commands": ["cd ./packages/common"]
+				},
+				{
+					"name": "common",
+					"commands": ["cd ./packages/common", "yarn test:watch"]
+				}
+			]
+		},
+		{
+			"splitTerminals": [
+				{
+					"name": "notification",
+					"commands": []
+				}
+			]
+		}
+	]
+}
