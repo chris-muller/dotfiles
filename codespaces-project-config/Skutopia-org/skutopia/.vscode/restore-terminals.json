@@ -1,79 +1,83 @@
 {
-  "artificialDelayMilliseconds": 300,
-  "keepExistingTerminalsOpen": false,
-  "runOnStartup": true,
-  "terminals": [
-    {
-      "splitTerminals": [
-        {
-          "name": "web",
-          "commands": ["cd ./web"]
-        },
-        {
-          "name": "tests",
-          "commands": ["cd ./web", "yarn test:watch"]
-        }
-      ]
-    },
-    {
-      "splitTerminals": [
-        {
-          "name": "actions",
-          "commands": ["cd ./server/actions"]
-        },
-        {
-          "name": "tests",
-          "commands": ["cd ./server/actions", "yarn test:watch"]
-        }
-      ]
-    },
-    {
-      "splitTerminals": [
-        {
-          "name": "shiptopia",
-          "commands": ["cd ./shiptopia"]
-        },
-        {
-          "name": "tests",
-          "commands": ["cd ./shiptopia", "yarn test:watch"]
-        }
-      ]
-    },
-    {
-      "splitTerminals": [
-        {
-          "name": "shared",
-          "commands": ["cd ./shared"]
-        },
-        {
-          "name": "tests",
-          "commands": ["cd ./shared", "yarn test:watch"]
-        }
-      ]
-    },
-    {
-      "splitTerminals": [
-        {
-          "name": "shopify-utils",
-          "commands": ["cd ./shopify-utils"]
-        }
-      ]
-    },
-    {
-      "splitTerminals": [
-        {
-          "name": "seeder",
-          "commands": ["cd ./seeder"]
-        }
-      ]
-    },
-    {
-      "splitTerminals": [
-        {
-          "name": "skutopia",
-          "commands": []
-        }
-      ]
-    }
-  ]
+	"artificialDelayMilliseconds": 300,
+	"keepExistingTerminalsOpen": false,
+	"runOnStartup": true,
+	"terminals": [
+		{
+			"splitTerminals": [
+				{
+					"name": "web",
+					"commands": ["cd ./web"]
+				},
+				{
+					"name": "tests",
+					"commands": ["cd ./web", "yarn test:watch"]
+				},
+				{
+					"name": "storybook",
+					"commands": ["cd ./web", "yarn storybook --no-open"]
+				}
+			]
+		},
+		{
+			"splitTerminals": [
+				{
+					"name": "actions",
+					"commands": ["cd ./server/actions"]
+				},
+				{
+					"name": "tests",
+					"commands": ["cd ./server/actions", "yarn test:watch"]
+				}
+			]
+		},
+		{
+			"splitTerminals": [
+				{
+					"name": "shiptopia",
+					"commands": ["cd ./shiptopia"]
+				},
+				{
+					"name": "tests",
+					"commands": ["cd ./shiptopia", "yarn test:watch"]
+				}
+			]
+		},
+		{
+			"splitTerminals": [
+				{
+					"name": "shared",
+					"commands": ["cd ./shared"]
+				},
+				{
+					"name": "tests",
+					"commands": ["cd ./shared", "yarn test:watch"]
+				}
+			]
+		},
+		{
+			"splitTerminals": [
+				{
+					"name": "shopify-utils",
+					"commands": ["cd ./shopify-utils"]
+				}
+			]
+		},
+		{
+			"splitTerminals": [
+				{
+					"name": "seeder",
+					"commands": ["cd ./seeder"]
+				}
+			]
+		},
+		{
+			"splitTerminals": [
+				{
+					"name": "skutopia",
+					"commands": []
+				}
+			]
+		}
+	]
 }
